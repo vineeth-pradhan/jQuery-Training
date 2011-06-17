@@ -11,3 +11,13 @@ $(document).ready(function(){
   $(this).append(" BAM! "+ i );
   });
 });
+
+ $(document).ready(function() {
+   // use this to reset a single form
+   $("#reset").click(function() {
+     $("form")[0].reset();
+   });
+ });
+
+
+
