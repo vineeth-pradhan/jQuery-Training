@@ -9,6 +9,11 @@ $(document).ready(function(){
     $(this).addClass("green");
 }, function(){
     $(this).removeClass("green");
+  });
 });
-  $("#orderedlist > li").addClass("blue");
+
+$(document).ready(function(){
+  $("#orderedlist").find("li").each(function(i){
+  $(this).append(" BAM! "+ i );
+  });
 });
