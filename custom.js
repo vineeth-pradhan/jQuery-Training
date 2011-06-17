@@ -5,6 +5,10 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $("#orderedlist").addClass("red");
+  $("#orderedlist li:last").hover(function(){
+    $(this).addClass("green");
+}, function(){
+    $(this).removeClass("green");
+});
   $("#orderedlist > li").addClass("blue");
 });
