@@ -1,10 +1,4 @@
 $(document).ready(function(){
-  $("a").click(function(){
-   alert("Hello world!");
- });
-});
-
-$(document).ready(function(){
   $("#orderedlist li:last").hover(function(){
     $(this).addClass("green");
 }, function(){
